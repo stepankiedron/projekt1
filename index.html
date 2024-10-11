@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukázka tvorby menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .l-heading{
+            font-size: 3.5rem;
+            margin-bottom: 0,75rem;
+            line-height: 1.1;
+        }
+        .lead{
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        .btn{
+            display: inline-block;
+            background: rgb(177, 77, 10);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: #5e3e0e;
+        }
+        #navbar{
+            background-color: rgb(114, 72, 25);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+        #navbar .logo{
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: larger;
+        }
+        #navbar ul{
+            display: flex;
+            list-style: none;
+        }
+        #navbar ul li{
+            margin: 0 4px;
+            padding: 0 12px;
+        }
+        #navbar ul li a{
+            margin: 0 4px;
+            color: black;
+            padding: 12px;
+            display: flex;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        #navbar ul li a:hover{
+            background-color: rgb(90, 90, 243);
+        }
+        #showcase{
+            background: #333 url("https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+        }
+        #showcase .showcase-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            padding: 0 2rem;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <i class="fa-solid fa-school"><br>Škola budoucnosti <br></i></div>
+        <ul>
+            <li><a href="#home"><i class="fa-solid fa-house-user">home</i></a></li>
+            <li><a href="#form"><i class="fa-solid fa-paragraph">form</i></a></li>
+            <li><a href="#contact"><i class="fa-solid fa-address-book">contact</i></a></li>
+        </ul>
+
+
+
+    </nav>
+    <div id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">Nejrozvinutější způsoby učení</h1>
+            <p class="lead">Díky nejnovějším technikám vzdělávání, přístupu ke studentům a technikám zvládání reakcí mládeže, se v naší škole bude Vaše dítě cítit jako v bavlnce.</p>
+            <a href="#what" class="btn">Chci vědět více</a>
+    </div>
+</body>
+</html>
