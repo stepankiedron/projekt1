@@ -6,101 +6,129 @@
     <title>Ukázka tvorby menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="./CSS/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="./CSS/widescreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 700px)" href="css/widescreen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .l-heading{
-            font-size: 3.5rem;
-            margin-bottom: 0,75rem;
-            line-height: 1.1;
-        }
-        .lead{
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-        }
-        .btn{
-            display: inline-block;
-            background: rgb(177, 77, 10);
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-        }
-        .btn:hover{
-            background-color: #5e3e0e;
-        }
-        #navbar{
-            background-color: rgb(114, 72, 25);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 60px;
-        }
-        #navbar .logo{
-            margin: 0 12px;
-            font-weight: bold;
-            font-size: larger;
-        }
-        #navbar ul{
-            display: flex;
-            list-style: none;
-        }
-        #navbar ul li{
-            margin: 0 4px;
-            padding: 0 12px;
-        }
-        #navbar ul li a{
-            margin: 0 4px;
-            color: black;
-            padding: 12px;
-            display: flex;
-            text-decoration: none;
-            border-radius: 5px;
-            text-transform: uppercase;
-        }
-        #navbar ul li a:hover{
-            background-color: rgb(90, 90, 243);
-        }
-        #showcase{
-            background: #333 url("https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
-            height: 100vh;
-            color: white;
-        }
-        #showcase .showcase-content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100%;
-            padding: 0 2rem;
-            background-color: rgba(0, 0, 0, 0.6);
-        }
-    </style>
 </head>
 <body>
     <nav id="navbar">
-        <i class="fa-solid fa-school"><br>Škola budoucnosti <br></i></div>
+        <i class="fa-solid fa-school">Příměstské tábory</i></div>
         <ul>
-            <li><a href="#home"><i class="fa-solid fa-house-user">home</i></a></li>
-            <li><a href="#form"><i class="fa-solid fa-paragraph">form</i></a></li>
-            <li><a href="#contact"><i class="fa-solid fa-address-book">contact</i></a></li>
+            <li><a href="formular.html">Přihlásit se</a></li>
+            <li><a href="#domů">Domů</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
         </ul>
-
-
-
     </nav>
+
     <div id="showcase">
-        <div class="showcase-content">
-            <h1 class="l-heading">Nejrozvinutější způsoby učení</h1>
-            <p class="lead">Díky nejnovějším technikám vzdělávání, přístupu ke studentům a technikám zvládání reakcí mládeže, se v naší škole bude Vaše dítě cítit jako v bavlnce.</p>
+        <div class="content">
+            <h1 class="l-heading">Nejzábavněji strávené prázdniny</h1>
+            <p class="lead">Díky nejnovějším technikám přístupu k dětem a technikám zvládání reakcí mládeže, se v našem táboře bude Vaše dítě cítit jako v bavlnce.</p>
             <a href="#what" class="btn">Chci vědět více</a>
     </div>
+    <section id="what"  class= "bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">Co <span class="text-primary">děláme</span></h2>
+                <div class="items">
+                    <div class="item">
+                        <i class="fa-solid fa-gamepad fa-2x"></i>
+                        <div>
+                            <h3>Program</h3>
+                            <p>Máme bohatý program, <br> ze kterého bude nadšené každe dítě</p>
+                        </div>
+                </div>
+                    <div class="item">
+                        <i class="fa-solid fa-utensils fa-2x"></i>
+                        <div>
+                            <h3>Jídelníček</h3>
+                            <p>Také máme por Vaše Dítě <br>vlastní jídelnu v budově</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <i class="fa-solid fa-house fa-2x"></i>
+                    <div>
+                        <h3>Prostředí</h3>
+                        <p>Moderní prostředí, zahrádka i jídelna.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section id="obrazky" class="py-1 bg-dark">
+        <div class="container">
+            <h2 class="m-heading text-center">Obrázky</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="./img/inline.jfif" alt="brusle" class="image">
+                    <div class="overlay">
+                        <h3 class="text">Bruslení</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/taborjfif.jfif" alt="prestavka" class="image">
+                    <div class="overlay">
+                        <h3 class="text">Přestávka</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <section id="tabulka" class="py-1">
+                <table class="my-table">
+                    <h2 class="m-heading text-center">Informace</h2>
+                    <tr>
+                        <td>Místo konání:</td>
+                        <td>Městské sady v Opavě. K dispozici jsou lavičky u
+                            <br>bruslařské stezky před obchodem i nový Inline areál.</td>
+                    </tr>
+                    <tr>
+                        <td>Termíny</td>
+                        <td>8.7. - 12.7.2024 (Po - Pá)
+                            <br>15.7. - 19.7.2024 (Po - Pá)
+                            <br>22.7. - 26.7.2024 (Po - Pá)
+                            <br>5.8. - 9.8.2024 (Po - Pá)
+                            <br>12.8. - 16.8.2024 (Po - Pá)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cena</td>
+                        <td>4 200 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>Přihlášky</td>
+                        <td>Pro přihlášení nás kontaktujte</td>
+                    </tr>
+                </table>
+    </div>
+    <section id="kontakt" class="bg-dark">
+        <div class="container">
+            <div class="kontakt-img"></div>
+            <div class="kontakt-text p-1 bg-dark">
+                <h2 class="m-heading"><span class="text-primary">Kontaktní </span>informace</h2>
+                <ul>
+                    <li>Příměststé tábory s.r.o., Opava</li>
+                    <li>Husova 307/17, 746 01 Opava</li>
+                    <li>746 01 Opava</li>
+                    <li><span class="text-primary"><i class="fa-solid fa-square-phone"></i></span> +420 553 615 609</li>
+                    <li><span class="text-primary"><i class="fa-solid fa-square-envelope"> </i></span>
+                        prime.tabor@opava.cz</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div>
+    <section id="zdroje" class="py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">Zdroje</h2>
+            <div>Fotka dětí od <a href="https://unsplash.com/@austin_pacheco?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Austin Pacheco</a> na <a href="https://unsplash.com/photos/shallow-focus-photography-of-two-boys-doing-wacky-faces-FtL07GM9Q7Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+            <div>Showcase fotka od <a href="https://unsplash.com/@joshuas?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joshua Sukoff</a> na <a href="https://unsplash.com/photos/the-night-sky-with-stars-and-trees-in-the-foreground-nPfU-Uen0mk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>            
+        </div>
+    </section>
 </body>
 </html>
